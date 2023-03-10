@@ -55,7 +55,100 @@ header nav ul{
     color: #3286FC;
 }
 
+/* intro */
+
+#intro{
+    padding: 2.5rem;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.card{
+    flex-basis: 100%;
+    background-color: #BADDFF;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#intro .card:first-child{
+    text-align: left;
+    padding-bottom: 0;
+}
+
+#intro .card:first-child i{
+    font-size: 1rem;
+    color: white;
+}
+
+.card h3{
+    color: #3286FC;
+}
+
+.card p{
+    color: #5C6E80;
+    line-height: 140%;
+    margin: 1.25rem 0;
+
+}
+
+.card img{
+    margin: 1.25rem;
+}
+
+.btn-blu{
+    background-color: #3286FC;
+    color: white;
+    margin: 1.25rem 0;
+
+}
+
+#intro img{
+    width: 80%;
+    display: block;
+}
+
+.card i{
+    font-size: 3rem;
+    color: #3286FC;
+    margin-bottom: 1.5rem;
+}
+
 @media only screen and (min-width: 768px){
+
+    #intro img{
+        width: 50%;
+        display: block;
+    }
+
+    #intro>div{
+        justify-content: space-between;
+    }
+    
+    .card{
+        flex-basis: calc(100% / 3 - 2%);
+        /* background-color: #BADDFF;
+        padding: 1.5rem;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 2rem; */
+    }
+
+    #intro .card:first-child{
+        flex-basis: calc(66.66% - 2%);
+    }
 
 }
 
@@ -67,6 +160,10 @@ header nav ul{
     
     header nav ul{
         display: block;
+    }
+
+    #intro .card:first-child{
+        display: flex;
     }
     
 } 
