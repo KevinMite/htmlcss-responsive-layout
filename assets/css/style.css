@@ -60,7 +60,8 @@ header nav ul{
 #intro,
 #strategy-planning,
 #testimonials,
-#benefits{
+#benefits,
+#about-us{
     padding: 2.5rem;
 }
 
@@ -171,7 +172,8 @@ header nav ul{
 
 /* testimonials */
 
-#testimonials .testimonial img{
+#testimonials .testimonial img,
+#about-us .avatar img{
     /* width: 100%; */
     border-radius: 50%;
     object-fit: cover;
@@ -262,12 +264,45 @@ header nav ul{
     margin: 1.5rem 0;
 }
 
-.btn-purple{
+#benefits .btn-purple,
+#about-us .btn-purple{
     background-color: #9692E3;
     color: white;
     margin-top: 1.5rem;
     display: inline-block;
 }
+
+/* abuot us  */
+
+#about-us h2{
+    font-size: 2.5rem;
+    color: #9692E3;
+    margin: 1.5rem 0;
+}
+
+#about-us .avatar{
+    position: relative;
+    display: inline-block;
+    margin: 1.5rem 0;
+}
+
+#about-us .avatar img{
+    width: 100%;
+}
+
+#about-us .avatar i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4.5rem;
+    color: #9692E3;
+}
+
+#about-us h3{
+    color: #9692E3;
+    margin: 1.5rem 0;
+}
+
 
 
 /* tablet */
@@ -317,6 +352,22 @@ header nav ul{
     #benefits .benefit-card{
         flex-basis: calc(50% - 2%);
     }
+
+    /* about us  */
+
+    #about-us>div{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-us .col-70{
+        flex-basis: 69%;
+    }
+
+    #about-us .col-30{
+        flex-basis: 29%;
+    }
+
 
 }
 
