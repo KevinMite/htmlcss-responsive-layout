@@ -32,6 +32,7 @@ header{
     padding: 1.25rem;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 header nav{
@@ -55,13 +56,19 @@ header nav ul{
     color: #3286FC;
 }
 
+.btn-yellow{
+    background-color: white;
+    color: #9692E3;
+}
+
 /* intro */
 
 #intro,
 #strategy-planning,
 #testimonials,
 #benefits,
-#about-us{
+#about-us,
+#cta{
     padding: 2.5rem;
 }
 
@@ -303,7 +310,36 @@ header nav ul{
     margin: 1.5rem 0;
 }
 
+/* cta  */
 
+#cta{
+    background-color: #9692E3;
+    color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+#cta h3{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+#cta h2{
+    font-size: 5rem;
+    color: yellow;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+}
+
+#cta ul li{
+    list-style: circle;
+    display: inline-block;
+    margin: 0 1.25rem;
+}
+
+#cta a{
+    display: inline-block;
+}
 
 /* tablet */
 @media only screen and (min-width: 768px){
